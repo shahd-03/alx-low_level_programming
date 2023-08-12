@@ -10,12 +10,15 @@
 
 int main(void)
 {
-	char ch = 'z';
+	int digit = 48;
 
-	while (ch >= 'a')
+	while (digit <= 102)
 	{
-		putchar(ch);
-		ch--;
+		putchar(digit);
+
+		if (digit == 57)
+			digit += 39;
+		digit++;
 	}
 	putchar('\n');
 	return (0);
