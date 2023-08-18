@@ -1,4 +1,4 @@
-#include "main"
+#include <stdio.h>
 /**
  * main - prints the number from 1 - 100, but for mult of 3 & 5 print Fizz Buzz
  *
