@@ -8,19 +8,24 @@
 
 void print_diagonal(int n)
 {
-	int sp1, sp2;
+	int i, j;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	for (i = 0; i < n; i++)
 	{
-		for (sp1 = 1; sp1 <= n; sp1++)
+		if (n > 1)
 		{
-			for (sp2 = 1; sp2 <= sp1; sp2++)
+			for (j = 0; j < i; j++)
+			{
 				_putchar(' ');
-			_putchar(92);
+			}
+
+			_putchar('\\');
 			_putchar('\n');
 		}
+	}
 
+	if (n <= 0)
+	{
+		_putchar('\n');
 	}
 }
