@@ -11,9 +11,7 @@ void print_diagonal(int n)
 	int sp1, sp2;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
 		for (sp1 = 1; sp1 <= n; sp1++)
