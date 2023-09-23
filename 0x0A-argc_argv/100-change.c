@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 
 	if (!*p)
 	{
-		while (total > 1)
+		while (totl > 1)
 		{
 			for (i = 0; i < sizeof(cents[i]); i++)
 			{
