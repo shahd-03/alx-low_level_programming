@@ -9,17 +9,21 @@
  * Return: An integer
  **/
 
-size_t print_listint(const listint_t *h)
+size_t print_list(const list_t *h)
 {
-	const listint_t *tp;
-	unsigned int cntr = 0;
+	size_t node;
 
-	tp = h;
-	while (tp)
+	node = 0;
+	while (h != NULL)
 	{
-		printf("%d\n", tp->n);
-		cntr++;
-		tp = tp->next;
+		if (h->str == NULL)
+		{
+			printf("[%d] %s\n", 0, "(nil)");
+		}
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		node++;
 	}
-	return (cntr);
+	return (node);
 }
