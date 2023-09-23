@@ -9,6 +9,7 @@
  *
  * Return: 0
  */
+
 int main(int argc, char **argv)
 {
 	int i, s, sum = 0;
